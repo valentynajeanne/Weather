@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather forecast</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div class="wrap">
+    <!--создаем заголовок-логотип-->
+    <header class="header">
+        <div class="title">
+            <img src="./img/1894636620128.png" alt="foxminded" class="title-img-left">
+            <img src="./img/Vector.svg" alt="red bc" class="title-img-right">    
+        </div>
+    <!--создаем поле для введения назания города -->
+        <form id="myform" action="#" name="form" method="post" 
+           novalidate enctype="multipart/form-data" target="_blank">
+           <label for="place" id="label">
+            
+            <input
+              type="text"
+              name="place"
+              id="city"
+              class="place"
+              data-required="true"
+              placeholder="Киів, Kyiv, Ukraine"
+            />
+            <span>Celected: Київ, Kyiv, Ukraine</span> 
+          </label>
+          <!-- создаем кнопку которая будет запускать поиск  -->
+            <button class="btn" id="button">
+                <a>find</a>
+            </button>
+            <p></p>
+        </form>
+    </header>
+    <!--блок с карточками на каждый день недели-->
+ <main>   
+    <!--карточка на сегодня-->
+    <section class="today">
+        <div class="container-first">
+        <div class="temperature-now" id="tempNow">
+            -5°C
+        </div>
+           
+                <span class="precipitation" id="precip">rain</span>
+                <span class="temperature-late" id="tempLate">+ 8 °C</span>
+            </div>
+            
+       
+        <div class="container-middle">
+            <div class="precipitation-general" id="precipGen">Clouds</div>
+            <div class="location" id="locationCity">Kyiv,Ukraine</div>
+        </div>
+       
+        <img src="./img/rain.png" alt="" class="fox-rain" id="imgToday"> 
+    </section>
+    <section class="day__second">
+        <div class="day-week" id="dayWeek2">THU</div>
+        <div class="image">
+            <img src="./img/storm.png" id="img2" alt="">
+        </div>
+        <div class="precipitation-day" id="precip2">Rain</div>
+        <div class="temperature-day">
+            <div class="time-day">Day</div>
+            <div class="temp-day" id="tempMax2">+ 5 °C</div>
+            <div class="temp-night" id="tempMin2">+ 1 °C</div>
+            <div class="time-night">Night</div>
+        </div>
+    </section>
+    <section class="day__third">
+        <div class="day-week" id="dayWeek3">FRI</div>
+        <div class="image">
+            <img src="./img/light rain.png" id="img3" alt="">
+        </div>
+        <div class="precipitation-day" id="precip3">Strong Snow</div>
+        <div class="temperature-day">
+            <div class="time-day">Day</div>
+            <div class="temp-day" id="tempMax3">1 °C</div>
+            <div class="temp-night" id="tempMin3">t4 °C</div>
+            <div class="time-night">Nigh</div>
+    </section>
+    <section class="day__fourth">
+        <div class="day-week" id="dayWeek4">SAT</div>
+        <div class="image">
+            <img src="./img/snow.png" id="img4" alt="">
+        </div>
+        <div class="precipitation-day" id="precip4">Light rain</div>
+        <div class="temperature-day">
+            <div class="time-day">Day</div>
+            <div class="temp-day" id="tempMax4">+ 8 °C</div>
+            <div class="temp-night" id="tempMin4">+ 12 °C</div>
+            <div class="time-night">Night</div>
+            
+    </section>
+    <section class="day__fifth">
+        <div class="day-week" id="dayWeek5">SAN</div>
+        <div class="image">
+            <img src="./img/clouds.png" alt="" class="fox-sunny" id="img5">
+            
+        </div>
+        <div class="precipitation-day" id="precip5">Sunny</div>
+        <div class="temperature-day">
+            <div class="time-day">Day</div>
+            <div class="temp-day" id="tempMax5">+ 18 °C</div>
+            <div class="temp-night" id="tempMin5">+ 12 °C</div>
+            <div class="time-night">Night</div>
+    </section>
+    <section class="day__sixth">
+        <div class="day-week" id="dayWeek6">MON</div>
+        <div class="image">
+            <img src="./img/clouds.png" id="img6" alt="">
+        </div>
+        <div class="precipitation-day" id="precip6">Cloundly</div>
+        <div class="temperature-day">
+            <div class="time-day">Day</div>
+            <div class="temp-day" id="tempMax6">+ 2°C</div>
+            <div class="temp-night" id="tempMin6">+ 10 °C</div>
+            <div class="time-night">Night</div>
+    </section>
+
+ </main>
+</div>
+    <script defer type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
